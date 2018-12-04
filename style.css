@@ -1,0 +1,109 @@
+* {
+    margin:0;
+  }
+
+
+  body{
+      display: flex;
+      flex-direction: column;
+      line-height: 100%;
+      text-align: center;
+      font-family: sans-serif;
+      
+  }
+
+ h1{
+      padding: 50px;
+      font-size: 4em;
+      font-family: 'Hammersmith One', sans-serif;
+      text-transform: capitalize;
+  }
+  
+  nav {
+      margin: 0px;
+      background-color: lavender;
+      padding:0.5em;
+      display: block;
+      font-family: 'Hammersmith One', sans-serif;
+      
+
+    
+  
+  }
+  /* the structure for the following list style was learnt in web week 6
+  i have changed a few items such as overflow as the characters in the box were being cut off
+  */
+  ul {
+      overflow: hidden;
+      list-style-type: none;
+      float: right;
+    
+  }
+  li {
+  /* this sets the dimensions for the "list" in our navigation panel*/
+      height: 20px;
+      margin-right:10px;
+      border-right: 1px solid #aaa;
+      padding: 20px 20px;
+      float: left;
+      font-size: 1.5em;
+    
+    
+    
+  
+  }
+  
+  /* gets rid of the final border on the end of the navigation bar*/
+  li:last-child {
+      border-right:none;
+  }
+  
+  li a {
+      text-decoration: none;
+      color: #ccc;
+      font-family: 'Cuprum', sans-serif;
+      text-transform: uppercase;
+      transition: all 0.5s ease;
+      font-size: 1.8em;
+  }
+  /*makes the text selected below change colour when the mouse is hovered over it.*/
+  li a:hover {
+      color: #666;
+  }
+  
+  /* in the navigation bar makes sure that the page selected is in bold*/
+  li.active a {
+      font-weight:bold;
+      color: #333;
+  }
+
+  .wrapper {
+      column-count: 3;
+      padding:1.5em;
+      column-width: 200px;
+      column-rule: solid;
+      column-rule-color: #ccc;
+  }
+
+  .columns {
+      font-size: 1em;
+      text-align: justify;
+      padding: 8px;
+
+  }
+  img {
+      max-width: 100%;
+      object-fit: contain;
+      margin-bottom: 8px;
+      margin-top:8px;
+  }
+
+  .columns h2 {
+      font-size: 2em;
+      margin: 5px;
+      line-height: 0.8em;
+      text-align: center;
+      font-family: 'Srisakdi', cursive;
+      padding: 5px;
+
+  }
