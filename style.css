@@ -77,7 +77,8 @@
       font-weight:bold;
       color: #333;
   }
-
+/* the wrapper below contains the boxes for my content, so the three
+different columns,*/
 .wrapper {
      padding: 1.5em;
      display: flex;
@@ -88,6 +89,7 @@
      justify-content: space-evenly;
      align-items: stretch;
      margin: auto;
+     text-align: justify;
 }
   
   img {
@@ -102,6 +104,7 @@
     border-right: solid;
     border-right-color: #ccc;
     padding: 1em;
+    background-color: aqua;
 }
 
 .column2{
@@ -109,11 +112,14 @@
     border-right: solid;
     border-right-color: #ccc;
     padding: 1em;
+    background-color: blueviolet;
+
 }
 
 .column3{
     max-width: 20em;
     padding: 1em;
+    background-color: darkgoldenrod;
   
 }
 
@@ -133,13 +139,23 @@
 {
     .wrapper{
         flex-direction: column;
+      
+        max-width: 20em;
     }
     .column1{
         border-right: transparent;
-        max-width: 30em;
+        max-width: 20em;
+        flex-shrink: 1;
     }
 
     .column2{
         border-right:transparent;
+    }
+}
+
+@media all and (max-width:50em)
+{
+    .wrapper{
+        padding: 0;
     }
 }
