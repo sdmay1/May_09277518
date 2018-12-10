@@ -104,9 +104,9 @@ different columns,*/
      padding: 1.5em;
      display: flex;
      order: 1,2,;
-     flex-grow: 1;
+   
      flex-direction: row;
-     flex-flow: row wrap;
+    flex-flow: wrap;
      justify-content: flex-start;
      align-items: stretch;
      margin: 15px;
@@ -126,6 +126,7 @@ different columns,*/
     border-right: solid;
     border-right-color: #ccc;
     padding: 1em;
+   
     background-color: aqua;
 }
 
@@ -134,6 +135,7 @@ different columns,*/
     border-right: solid;
     border-right-color: #ccc;
     padding: 1em;
+    
     background-color: blueviolet;
 
 }
@@ -170,9 +172,8 @@ different columns,*/
 @media all and (min-width:20em)
 {
     .wrapper{
-        flex-wrap: wrap;
-        
-        flex-shrink: 1;
+    
+    
     }
     .column1{
         border-right: transparent;
@@ -192,3 +193,12 @@ different columns,*/
     
 }
 
+@media all and (min-width:50em)
+{
+    .column1{
+        max-width:25em;
+    }
+    .column2{
+        max-width: 25em;
+    }
+}
