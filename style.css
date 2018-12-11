@@ -133,15 +133,11 @@ Andy Deans codepen and changed to suit my website.*/
 /* the wrapper below contains the boxes for my content, so the three
 different columns,*/
 .wrapper {
-     padding: 1.5em;
      display: flex;
-     order: 1,2,;
-   
      flex-direction: row;
-     flex-flow: wrap;
+     flex-wrap: wrap;
      justify-content: flex-start;
      align-items: stretch;
-     margin: 15px;
      text-align: justify;
 
 }
@@ -153,31 +149,27 @@ different columns,*/
       margin-top:8px;
   }
 
-.column1{
+.col {
   
     border-right: solid;
     border-right-color: #ccc;
-    padding: 1em;
+    padding: 1.5em;
+    max-width: calc((100%/3));
+    flex-direction: column;
    
     
 }
-
-.column2{
-    
-    border-right: solid;
-    border-right-color: #ccc;
-    padding: 1em;
-   
-
-}
-
-.column3{
-   
-    padding: 1em;
-    
-    order:3;
+.story1:first-child::first-letter {
+    color:blue;
+    float: left;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 75px;
+    line-height: 60px;
+    padding-top: 4px;
+    padding-right: 8px;
+    padding-left: 3px;
+  }  
   
-}
 
   h2 {
       font-size: 2em;
@@ -198,38 +190,3 @@ different columns,*/
       padding-top: 0;
     
     }
-
-
-@media all and (max-width:20em)
-{
-    
-    .column1{
-        border-right: transparent;
-       max-width: 20em;
-       
-    }
-
-    .column2{
-        border-right:transparent;
-       
-    }
-
-    .column3{
-       
-    }
-    
-    
-}
-
-@media all and (min-width:30em)
-{
-    .column1{
-        max-width:23em;
-    }
-    .column2{
-        max-width: 23em;
-    }
-    .column3{
-        max-width: 23em;
-    }
-}
