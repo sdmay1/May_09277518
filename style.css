@@ -76,7 +76,34 @@ Andy Deans codepen and changed to suit my website.*/
     
   
   }
-  
+  li:first-child:hover{
+      border-bottom:solid;
+      border-bottom-color:crimson;
+      transition: all 0.3s ease;
+
+  }
+  li:nth-child(2):hover{
+    border-bottom:solid;
+    border-bottom-color:blue;
+    transition: all 0.3s ease;
+  }
+
+  li:nth-child(3):hover{
+    border-bottom:solid;
+    border-bottom-color: green;
+    transition: all 0.3s ease;
+  }
+
+  li:nth-child(4):hover{
+    border-bottom:solid;
+    border-bottom-color:pink;
+    transition: all 0.3s ease;
+  }
+  li:last-child:hover{
+    border-bottom:solid;
+    border-bottom-color:yellow;
+    transition: all 0.3s ease;
+  }
   /* gets rid of the final border on the end of the navigation bar*/
   li:last-child {
       border-right:none;
@@ -93,11 +120,9 @@ Andy Deans codepen and changed to suit my website.*/
   /*makes the text selected below change colour when the mouse is hovered over it.*/
   li a:hover {
       color: #666;
-      border-bottom: solid;
-      border-color: crimson;
+     
       
   }
-
 
   
   /* in the navigation bar makes sure that the page selected is in bold*/
