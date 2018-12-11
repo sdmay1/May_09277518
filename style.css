@@ -21,14 +21,16 @@ webpage we have not specified*/
 Andy Deans codepen and changed to suit my website.*/
   .header{
     background: fixed;
-    background-position: left;
+    background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
    
   }
  #home {
-    background-image: url(snowboardimage.png);
-    height: 60vh;
+    background-image: url(ps4controller.png);
+    height: 50vh;
+
+    /*https://unsplash.com/photos/HUBNTCzE-R8*/
  }
  h1{
       padding: 1em;
@@ -91,7 +93,12 @@ Andy Deans codepen and changed to suit my website.*/
   /*makes the text selected below change colour when the mouse is hovered over it.*/
   li a:hover {
       color: #666;
+      border-bottom: solid;
+      border-color: crimson;
+      
   }
+
+
   
   /* in the navigation bar makes sure that the page selected is in bold*/
   li.active a {
@@ -127,7 +134,7 @@ different columns,*/
     border-right-color: #ccc;
     padding: 1em;
    
-    background-color: aqua;
+    
 }
 
 .column2{
@@ -135,15 +142,14 @@ different columns,*/
     border-right: solid;
     border-right-color: #ccc;
     padding: 1em;
-    
-    background-color: blueviolet;
+   
 
 }
 
 .column3{
    
     padding: 1em;
-    background-color: darkgoldenrod;
+    
     order:3;
   
 }
@@ -165,37 +171,40 @@ different columns,*/
       padding: 1em;
       font-family: cursive;
       padding-top: 0;
-      min-width: 20em;
+    
     }
 
 
-@media all and (min-width:20em)
+@media all and (max-width:20em)
 {
     
     .column1{
         border-right: transparent;
-        max-width: 20em;
+       max-width: 20em;
        
     }
 
     .column2{
         border-right:transparent;
-        max-width: 20em;
+       
     }
 
     .column3{
-        max-width: 20em;
+       
     }
     
     
 }
 
-@media all and (min-width:50em)
+@media all and (min-width:30em)
 {
     .column1{
-        max-width:25em;
+        max-width:23em;
     }
     .column2{
-        max-width: 25em;
+        max-width: 23em;
+    }
+    .column3{
+        max-width: 23em;
     }
 }
