@@ -106,7 +106,7 @@ different columns,*/
      order: 1,2,;
    
      flex-direction: row;
-    flex-flow: wrap;
+     flex-flow: wrap;
      justify-content: flex-start;
      align-items: stretch;
      margin: 15px;
@@ -171,10 +171,7 @@ different columns,*/
 
 @media all and (min-width:20em)
 {
-    .wrapper{
     
-    
-    }
     .column1{
         border-right: transparent;
         max-width: 20em;
