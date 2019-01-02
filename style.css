@@ -228,38 +228,18 @@ blockquote {
       padding-top: 0;
     
     }
-    aside {
-        background-color: darkslategrey;
-        max-height: 50em;
-        margin: 20px;
-    }
+   
 
     footer {
         background-color: aquamarine;
         padding:1em;
     }
-
-    .Story{
-        display: flex;
-        flex-direction: row;
-        flex-flow: wrap;
-        justify-content: flex-start;
-       text-align: right;
-       margin:20px;
-        
-    }
-
-    .Story img{
-        max-width: 600px;
-        max-height: 400px;
-    }
-   
-    
     
     @media (min-width: 200px) and (max-width: 599px){
         li{
             border-right: transparent;
         }
+
     }
     @media (max-width:749px)
     {
@@ -273,10 +253,11 @@ blockquote {
           width: calc((30));
         }
 
-        li {
+        ul {
             float: left;
-            text-align: left;
+          text-align: left;
         }
+        
       }
       
       /* tablet  and down */
@@ -296,4 +277,89 @@ blockquote {
         }
         
       }
+      /*https://codepen.io/chriscoyier/pen/tvheK*/
      
+      
+/*code below controls most of the index page content*/
+
+      .page-wrap {
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: row;
+        max-width: 100%;
+       
+
+      }
+      .main-content {
+        max-width: 66.66%;
+        padding-right: 10px;
+      }
+      aside {
+        max-width: calc(33.33% - 10px);
+        justify-content: flex-end;
+      }
+      
+      .module {
+        border: 1px solid #ccc;
+        background: #eee;
+        padding: 20px;
+        margin: 10px;
+        display: block;
+        
+        
+      }
+.twitter-timeline{
+    margin:10px;
+    max-width: 33.3%;
+}
+        .module h3 {
+            max-width: 80%;
+            display: block;
+        }
+
+
+         time {
+          font-size: 0.9em;
+          color: #999;
+          display: block;
+          max-width: 80%;
+        }
+         
+      img {
+          max-width: 80%;
+          object-fit: contain;
+        display: block;
+ 
+         
+      }
+      
+      p.text {
+         
+         width:19%;
+         
+         
+        
+         
+      }
+      
+      
+/*content on glossary page*/
+
+
+
+table{
+    margin:10px;
+    
+}
+
+th {
+    background-color: #999;
+    padding:1em;
+}
+
+td{
+    padding: 1em;
+    border: solid;
+    border-width: 1px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
