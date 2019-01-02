@@ -73,7 +73,8 @@ Andy Deans codepen and changed to suit my website.*/
       font-size: 1.5em;
     
     
-    
+    /* the five block of code below allow each of my navigation buttons to change
+    colour whenever they are hovered over*/
   
   }
   li:first-child:hover{
@@ -194,7 +195,9 @@ blockquote {
     border-right: none;
 }
 
-.col:nth-child(2):first-letter {
+/* this piece has been commented out until i figure how to make it the first paragraph not header
+
+.col:nth-child():first-letter {
     color:blue;
     float: left;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
@@ -204,16 +207,16 @@ blockquote {
     padding-right: 8px;
     padding-left: 3px;
   }  
-  
+  */
 
   h2 {
       font-size: 2em;
       margin: 5px;
-      line-height: 0.8em;
+      line-height: 1em;
       text-align: center;
-      font-family: 'Srisakdi', cursive;
+     
       padding: 5px;
-      margin-bottom: 0;
+      margin: 0;
 
   }
 
@@ -221,7 +224,7 @@ blockquote {
       font-size: 1em;
     text-align: center;
       padding: 1em;
-      font-family: cursive;
+      font-family: sans-serif;
       padding-top: 0;
     
     }
