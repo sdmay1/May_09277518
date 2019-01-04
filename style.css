@@ -1,4 +1,8 @@
 @import url('https://fonts.googleapis.com/css?family=Bungee');
+@import url('https://fonts.googleapis.com/css?family=Oxygen');
+@import url('https://fonts.googleapis.com/css?family=Permanent+Marker');
+@import url('https://fonts.googleapis.com/css?family=Cinzel+Decorative');
+
 * {
     margin:0;
     
@@ -184,6 +188,7 @@ blockquote {
     border-right: solid;
     border-right-color: #ccc;
     padding: 1.5em;
+    
     width: calc((80%/3));
     flex-direction: column;
    margin-top:20px;
@@ -191,6 +196,16 @@ blockquote {
    
     
 }
+.col-1 img {
+    float: right;
+    margin: 10px;
+}
+
+h4{
+    margin:10px;
+}
+
+
 .col:last-child{
     border-right: none;
 }
@@ -263,7 +278,7 @@ blockquote {
       /* tablet  and down */
     @media (max-width : 600px) {
         /* converts cols to full width */
-        .col {
+        col {
           flex: 0 0 100%;
           max-width:21em;
           border-right:transparent;
@@ -276,6 +291,7 @@ blockquote {
             
         }
         
+        
       }
       /*https://codepen.io/chriscoyier/pen/tvheK*/
      
@@ -284,65 +300,107 @@ blockquote {
 
       .page-wrap {
         display: flex;
-        flex-wrap: wrap;
         flex-direction: row;
+        flex-wrap: wrap;
+
         max-width: 100%;
        
 
       }
       .main-content {
-        max-width: 66.66%;
+        flex:2;
         padding-right: 10px;
       }
       aside {
-        max-width: calc(33.33% - 10px);
-        justify-content: flex-end;
+        flex:1;
+
+       
       }
       
       .module {
+     
         border: 1px solid #ccc;
         background: #eee;
         padding: 20px;
         margin: 10px;
-        display: block;
-        
         
       }
+
+      .sidebar {
+          flex:1;
+          border: 1px solid #ccc;
+          background: #eee;
+          font-family: 'Oxygen', sans-serif;
+          padding:20px;
+            margin:10px;
+            min-width:20em;
+      }
+
+      /*the below piece of code is to control the twitter feed on the index*/
 .twitter-timeline{
     margin:10px;
     max-width: 33.3%;
 }
-        .module h3 {
-            max-width: 80%;
+        h3 {
+            
             display: block;
+            font-family: 'Bungee', cursive;
+            font-size:2em;
+            line-height: 100%;
+            margin:10px;
         }
 
 
          time {
-          font-size: 0.9em;
+          font-size: 0.em;
           color: #999;
           display: block;
-          max-width: 80%;
+          margin:10px;
+      
         }
          
-      img {
-          max-width: 80%;
-          object-fit: contain;
-        display: block;
- 
-         
-      }
       
       p.text {
-         
-         width:19%;
+         margin:10px;
+         font-family: 'Oxygen', sans-serif;
          
          
         
          
       }
-      
-      
+      .story1{
+          background-image: url(meright.png);
+           background-image: no-repeat center;
+            background-size: cover;
+
+         
+
+      }
+      .content{
+          
+          visibility:hidden;
+          background: rgba(0,0,0,0.5);
+          color: #fff;
+          text-align: center;
+          font-size: 2em;
+          line-height: 100%;
+          font-family: 'Permanent Marker', cursive;
+          height: 300px;
+          padding: 10%;
+      }
+
+      .story1:hover .content{
+          visibility: visible;
+      }
+
+      .story2{
+          background-image:url(computers.png);
+          background-image:no repeat center;
+          background-size:cover;
+      }
+      .story2:hover .content{
+          visibility:visible;
+      }
 /*content on glossary page*/
 
 
@@ -362,4 +420,28 @@ td{
     border: solid;
     border-width: 1px;
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+p.disclaimer{
+    padding:2em;
+}
+
+/*tutorials page */
+
+.youtube {
+    margin:10px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+   
+}
+
+.descript{
+    margin:10px;
+    max-width: 55%;
+}
+.video{
+
+    justify-content: flex-end;
+    max-width: 38%;
 }
